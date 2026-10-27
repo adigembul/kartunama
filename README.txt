@@ -1,9 +1,14 @@
-SETYOHADI WIRATMOKO — DIGITAL BUSINESS CARD
+DIGITAL CARD — SETYOHADI WIRATMOKO | RUMAH EDUKASI DIGITAL
 
-1. Unggah seluruh isi folder ini ke public_html domain/subdomain melalui Hostinger, atau deploy ke Netlify/Vercel.
-2. Buka URL HTTPS aplikasi. Secara default aplikasi memakai alamat URL halaman HTTPS saat ini untuk tombol share dan QR.
-3. Jika ingin URL berbeda/permanen, buka Pengaturan URL & NFC lalu isi URL publik HTTPS dan Simpan URL Profil. Pengaturan lokal browser ini tidak mengubah URL yang dilihat pengunjung lain.
-4. NFC: pakai kartu/stiker NFC NDEF (NTAG213/215/216). Di Android Chrome: NFC ON -> buka website HTTPS -> Pengaturan URL & NFC -> Tulis URL ke Tag NFC -> dekatkan tag ke belakang HP, setujui izin. Alternatif: aplikasi NFC Tools untuk menyimpan record URI/URL.
-5. Untuk penerima, dekatkan HP yang mendukung pembacaan NFC ke tag. iPhone yang kompatibel biasanya menampilkan pemberitahuan yang perlu diketuk untuk membuka halaman. Menempelkan HP ke HP lain TIDAK dijamin membuat halaman terbuka otomatis: Web NFC tidak mendukung peer-to-peer / host-card-emulation.
-6. Tombol Simpan Kontak mengunduh file vCard (.vcf). URL QR bergantung pada layanan QR eksternal sehingga membutuhkan internet.
-7. Data pribadi yang digunakan: nama dan nomor WA yang diberikan. Tautan situs Rumah Edukasi Digital dapat diganti dalam index.html.
+1. Upload seluruh file (index.html, config.json, icon.svg, manifest.webmanifest, sw.js) ke folder web HTTPS.
+2. Buka web, klik tombol ⚙ lalu buat PIN 6–12 digit untuk pengaturan browser tersebut.
+3. Ubah profil, unggah foto, atur tautan, portofolio, media sosial, fitur aktif/nonaktif, dan tema default.
+4. Klik Simpan Semua Perubahan. Penyimpanan ini LOKAL di browser yang digunakan untuk mengedit.
+5. Di tab Publikasi & NFC klik Unduh config.json, lalu TIMPA config.json di hosting agar pengunjung lain melihat perubahan. Proses ini tidak mengunggah PIN.
+6. Untuk menulis NFC, isi URL HTTPS publik yang permanen, lalu tekan Tulis NFC melalui Chrome Android yang mendukung Web NFC dan tempelkan kartu/stiker NDEF pada HP. NFC device-ke-device tanpa tag tidak dapat menjamin website terbuka otomatis.
+7. Konten default foto/proyek dapat disiapkan dengan data gambar terkompresi di config.json. Jika besar, upload bisa lebih lambat; untuk portofolio skala besar gunakan file gambar eksternal/CDN dan backend.
+8. Jika editor sebelumnya pernah menyimpan pengaturan lokal, data lokal pada browser editor akan mengungguli config.json hosting. Pengunjung baru membaca config.json publik.
+
+PERHATIAN KEAMANAN: PIN browser hanya mencegah pengaturan dibuka secara tidak sengaja pada browser yang sama. Ini bukan login server yang aman; website statis dapat disalin/diubah. Untuk admin privat, autentikasi multi-device, serta edit publik langsung, perlu backend dan database dengan kontrol akses. Jangan simpan rahasia/API key/PIN dalam config.json.
+
+(c) Digital Card. Rumah Edukasi Digital

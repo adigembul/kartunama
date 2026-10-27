@@ -1,0 +1,15 @@
+{
+  "name":"Setyohadi Wiratmoko",
+  "bio":"Digital Media Trainer · Creative Consultant · Technopreneur · Content Creator",
+  "place":"Jakarta, Indonesia",
+  "phone":"628159379000",
+  "email":"",
+  "website":"https://www.rumahedukasidigital.com",
+  "url":"",
+  "photo":"",
+  "theme":"dark",
+  "features":{"whatsapp":true,"contact":true,"links":true,"social":true,"portfolio":true,"qr":true,"share":true,"nfc":true},
+  "social":{"instagram":"","linkedin":"","facebook":"","youtube":"","tiktok":"","x":"","threads":"","github":""},
+  "links":[{"title":"Rumah Edukasi Digital","detail":"Inovasi, Edukasi dan Kreasi","url":"https://www.rumahedukasidigital.com"},{"title":"Pelatihan & Kolaborasi Digital","detail":"Workshop AI · Media · Creative Technology","url":"https://www.rumahedukasidigital.com"}],
+  "portfolio":[]
+}
